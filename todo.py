@@ -31,8 +31,27 @@ def load_list():
 
 
 def main():
-    to_do_list = load_list("to_do_list.txt")
+    
+    todo_list = load_list("todo_list.txt")
+
     while True:
         show_menu()
-        choice = input("Enter your choice: ")
+        option = input("Enter your choice: ")
         
+        if option == '1':
+            view_list(todo_list)
+        
+        elif option == '2':
+            add_element(todo_list)
+        
+        elif option == '3':
+            remove_element(todo_list)
+        
+        elif option == '4':
+            break
+        
+        else:
+            print("Error in choice. Try again.")
+        
+if __name__ == "__main__":
+    main()
