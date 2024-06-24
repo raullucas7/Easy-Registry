@@ -9,3 +9,7 @@ A simple command-line based To-Do List application. It allows you to view, add, 
 - Load list from a file
 
 **Tech used:** Python
+
+# Upcoming Changes
+- Implement API interface practical use
+- Implement GUI for functionality
